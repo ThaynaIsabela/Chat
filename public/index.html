@@ -15,7 +15,7 @@
     <form id="chat">
       <input type="text" name="username" placeholder="Digite seu usuário" />
       <div class="messages"></div>
-      <input type="text" name="username" placeholder="Digite sua mensagem" />
+      <input type="text" name="message" placeholder="Digite sua mensagem" />
       <button type="submit">Enviar</button>
     </form>
 
@@ -47,6 +47,8 @@
 
         var author = $("input[name=username]").val();
         var message = $("input[name=message]").val();
+
+        console.log(author);
 
         if (author.length && message.length) {
           var messageObject = {
